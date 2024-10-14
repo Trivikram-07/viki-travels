@@ -1,0 +1,77 @@
+/* Navbar container */
+.navbar {
+  background-color: #484646;
+  padding: 10px 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: relative; /* Make sure the position is relative for proper alignment of the toggler */
+}
+
+.navbar-brand {
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.navbar-brand i {
+  margin-right: 8px;
+}
+
+.navbar-toggler {
+  border: none;
+}
+
+.navbar-nav {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.nav-link {
+  color: #fff;
+  font-size: 1rem;
+  margin: 0 15px;
+  padding: 8px 12px;
+  transition: color 0.3s ease, background-color 0.3s ease;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  background-color: #555;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .navbar-nav {
+      flex-direction: column;
+      align-items: center; /* Center the items horizontally */
+      text-align: center; /* Center text within items */
+      margin-top: 15px; /* Optional: Adds space from the navbar toggle button */
+  }
+
+  .nav-link {
+      margin: 10px 0; /* Space out the links vertically */
+  }
+}
+
+/* Style for the logo container */
+.logoX {
+  display: inline-block;
+  width: 50px; /* Adjust size as needed */
+  height: 50px; /* Adjust size as needed */
+  overflow: hidden;
+  border-radius: 50%;
+  border: 2px solid #fff; /* Optional: Adds a border around the logo */
+  margin-right: 20px; /* Adds space between the logo and the brand text */
+}
+
+/* Style for the logo image */
+.logoX img {
+  width: 100%;
+  height: auto;
+  display: block;
+}

@@ -1,0 +1,90 @@
+/* Login.css */
+
+/* Overall Page Styling */
+.login-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #032b53, #e2e8f0);
+    padding: 20px;
+    position: relative;
+  }
+  
+  /* Toggle Button Styling */
+  .toggle-btn {
+    position: absolute;
+    bottom:65px;
+    right: 437;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .toggle-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Form Container Styling */
+  .form-container {
+    width: 100%;
+    max-width: 400px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    background: linear-gradient(135deg, #5a7ea2, #e2e8f0);
+  }
+  
+  /* Form Styling */
+  .signup h2 {
+    margin-bottom: 20px;
+    color: #333;
+    
+  }
+  
+  .form form {
+    display: flex;
+    flex-direction: column;
+    
+  }
+  
+  .form input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+  }
+  
+  .form input:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+  
+  .form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .form button:hover {
+    background-color: #0056b3;
+  }
+  

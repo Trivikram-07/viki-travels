@@ -1,0 +1,125 @@
+.unique-booking-container {
+  padding: 20px;
+  background-color: #f0f4f8; /* Light gray-blue background for a softer look */
+  position: relative; /* Ensure the container is the reference for positioning */
+}
+
+.unique-booking-heading {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 36px;
+  color: #333; /* Dark gray for a clean, professional look */
+}
+
+.unique-car-image {
+  position: fixed; /* Fix the image's position relative to the viewport */
+  top: 190px; /* Adjust as needed */
+  right: 800px; /* Adjust as needed */
+  z-index: 1000; /* Ensure it stays above other content */
+  width: 600px; /* Adjust as needed */
+}
+
+.unique-car-name {
+  position: fixed; /* Fix the image's position relative to the viewport */
+  top: 130px;
+  font-size: 28px;
+  font-weight: bold;
+  color: #2c3e50; /* Darker gray for better contrast */
+  margin-top: 10px;
+}
+
+.unique-car-price {
+  position: fixed; /* Fix the price's position relative to the viewport */
+  bottom: 120px; /* Adjust as needed */
+  right: 970px; /* Adjust as needed */
+  font-size: 30px;
+  color: #070707; /* Bright orange to highlight the price */
+  font-weight: bold;
+  z-index: 1000; /* Ensure it stays above other content */
+}
+
+.unique-booking-form {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 20px; /* Ensure there's space for the fixed image */
+}
+
+.unique-form-group {
+  margin-bottom: 20px;
+}
+
+.unique-form-label {
+  font-weight: bold;
+  color: #34495e; /* Dark blue-gray for form labels */
+}
+
+.unique-form-control {
+  border-radius: 5px;
+  border: 1px solid #ccc; /* Light gray border */
+  padding: 10px;
+}
+
+.unique-form-check {
+  margin-top: 15px;
+}
+
+.unique-submit-button {
+  background-color: #3498db; /* Bright blue for the button */
+  border: none;
+  color: #fff;
+  padding: 12px 25px;
+  border-radius: 5px;
+  font-size: 18px;
+  transition: background-color 0.3s ease;
+}
+
+.unique-submit-button:hover {
+  background-color: #2980b9; /* Darker blue on hover */
+}
+
+.unique-thank-you-message {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.unique-thank-you-heading {
+  font-size: 40px;
+  color: #27ae60; /* Green to match the success theme */
+}
+
+.unique-thank-you-text {
+  font-size: 20px;
+  color: #2c3e50; /* Dark gray for better readability */
+}
+
+.unique-thank-you-image {
+  width: 120px;
+  margin: 20px 0;
+}
+
+.unique-thank-you-footer {
+  font-size: 18px;
+  color: #7f8c8d; /* Light gray-blue for footer text */
+}
+
+/* Responsive adjustments for mobile devices */
+@media (max-width: 767px) {
+  .unique-car-image,
+  .unique-car-name,
+  .unique-car-price {
+    position: static; /* Remove fixed positioning */
+    width: 100%; /* Ensure image takes full width */
+    text-align: center; /* Center text for better mobile display */
+  }
+
+  .unique-car-name,
+  .unique-car-price {
+    margin: 10px 0;
+  }
+
+  .unique-booking-form {
+    margin-top: 0; /* Remove top margin to fit mobile screen better */
+  }
+}

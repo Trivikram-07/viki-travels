@@ -1,0 +1,169 @@
+/* Base styles for the container */
+.process-container {
+    text-align: center;
+    padding: 20px; /* Reduced padding */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #023047, #219ebc); /* Gradient background */
+    border-radius: 15px; /* Reduced border radius */
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3); /* Enhanced shadow */
+    margin: 20px auto;
+    max-width: 800px; /* Reduced max width */
+    color: #fff;
+    position: relative;
+  }
+  
+  /* Aspect ratio wrapper */
+  .aspect-ratio-wrapper {
+    position: relative;
+    width: 100%;
+    padding-top: 50%; /* Adjusted aspect ratio */
+    box-sizing: border-box;
+  }
+  
+  /* Aspect ratio content */
+  .aspect-ratio-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Heading styles */
+  .heading {
+    font-size: 2.5rem; /* Reduced font size */
+    color: #ffffff;
+    margin-bottom: 30px;
+    font-family: Arial, sans-serif;
+    font-weight: 900;
+    position: relative;
+    display: inline-block;
+    letter-spacing: 1.2px; /* Adjusted letter spacing */
+    text-shadow: 1.5px 1.5px 3px rgba(0, 0, 0, 0.5); /* Adjusted text shadow */
+  }
+  
+  /* Heading underline */
+  .heading::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 120px; /* Adjusted width */
+    height: 4px; /* Adjusted height */
+    background: #ffb703;
+    transform: translate(-50%, -50%);
+    border-radius: 2px;
+  }
+  
+  /* Styles for steps container */
+  .steps {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Reduced gap */
+    width: 100%;
+  }
+  
+  /* Styles for individual step */
+  .step {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Reduced gap */
+    padding: 15px; /* Reduced padding */
+    background: linear-gradient(135deg, #ffffff, #f8f9fa); /* Gradient background for step cards */
+    border-radius: 10px; /* Reduced border radius */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Enhanced shadow */
+    width: 100%;
+    max-width: 700px; /* Reduced max width */
+    margin: 0 auto;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #dee2e6; /* Subtle border */
+  }
+  
+  /* Hover effects for steps */
+  .step:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25); /* Deeper shadow on hover */
+  }
+  
+  .step-icon {
+    font-size: 2rem; /* Reduced font size */
+    color: #ffffff;
+    background-color: #ffb703; /* Icon circular background */
+    border-radius: 50%;
+    padding: 15px; /* Reduced padding */
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    background-image: linear-gradient(135deg, #ffb703, #ffc107); /* Gradient background for icons */
+  }
+  
+  .step-icon:hover {
+    transform: scale(1.2); /* Slightly enlarge the icon on hover */
+    background-color: #ff9f00; /* Darker icon background on hover */
+  }
+  
+  .step-content {
+    text-align: left;
+  }
+  
+  .step-title {
+    font-size: 1.5rem; /* Reduced font size */
+    color: #333;
+    margin-bottom: 8px; /* Reduced margin */
+    font-weight: bold;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3); /* Adjusted text shadow */
+  }
+  
+  .step-description {
+    font-size: 1rem; /* Reduced font size */
+    color: #666;
+    line-height: 1.5; /* Adjusted line height */
+  }
+  
+  /* Media queries for responsiveness */
+  @media (max-width: 768px) {
+    .process-container {
+      padding: 20px; /* Adjusted padding for mobile */
+    }
+  
+    .aspect-ratio-wrapper {
+      padding-top: 75%; /* Adjusted aspect ratio for mobile */
+    }
+  
+    .heading {
+      font-size: 2rem; /* Reduced font size for mobile */
+      margin-bottom: 20px; /* Adjusted margin */
+    }
+  
+    .steps {
+      gap: 15px; /* Adjusted gap for mobile */
+    }
+  
+    .step {
+      padding: 10px; /* Adjusted padding for mobile */
+      max-width: 100%; /* Full width for mobile */
+    }
+  
+    .step-icon {
+      font-size: 1.5rem; /* Reduced font size for mobile */
+      padding: 10px; /* Reduced padding */
+    }
+  
+    .step-title {
+      font-size: 1.25rem; /* Reduced font size */
+    }
+  
+    .step-description {
+      font-size: 0.9rem; /* Reduced font size */
+    }
+  }
+  
